@@ -22,7 +22,7 @@ class IndexController extends Controller
 
         $token = 'lam';
         $tmpArr = array($token, $timestamp, $nonce);
-        sort($tmpArr, SORT_STRING);
+        sort($tmpArr);
         $tmpStr = implode( $tmpArr );
         $tmpStr = sha1( $tmpStr );
 
